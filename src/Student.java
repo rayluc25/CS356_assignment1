@@ -3,11 +3,11 @@ class Student {
 
 	private final String id;
 	
-	public Student(String id) {
+	protected Student(String id) {
 		this.id = id;
 	}
 
-	public String getId() {
+	protected String getId() {
 		return id;
 	}
 

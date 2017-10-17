@@ -5,10 +5,9 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class SimulationDriver {
+class SimulationDriver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		// Generate a single choice question and answers, "First Question"
 		String[] firstAnswer = { "2", "3", "4" };

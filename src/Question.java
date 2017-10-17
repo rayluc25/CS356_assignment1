@@ -8,17 +8,17 @@ abstract class Question {
 	
 	protected abstract int getLimit();
 	
-	public Question(String question, ArrayList<String> answers) {
+	protected Question(String question, ArrayList<String> answers) {
 		this.question = question;
 		this.answers = answers;
 	}
 
 	
-	public String getQuestion() {
+	protected String getQuestion() {
 		return question;
 	}
 	
-	public ArrayList<String> getAllAnswers() {
+	protected ArrayList<String> getAllAnswers() {
 		return answers;
 	}
 

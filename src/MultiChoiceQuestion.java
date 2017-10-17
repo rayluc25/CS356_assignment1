@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class MultiChoiceQuestion extends Question {
+class MultiChoiceQuestion extends Question {
 
-	public MultiChoiceQuestion(String question, ArrayList<String> answers) {
+	protected MultiChoiceQuestion(String question, ArrayList<String> answers) {
 		super(question, answers);
 		
 	}

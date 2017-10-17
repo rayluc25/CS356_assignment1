@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Set;
 
-public class IVoteService {
+class IVoteService {
 	
 	private final Question question;
 	
@@ -12,7 +12,7 @@ public class IVoteService {
 		studentAnswers = new HashMap<>();
 	}
 	
-	public void receiveVote(String studentId, Set<Integer> answers) {
+	protected void receiveVote(String studentId, Set<Integer> answers) {
 		//SingleChoiceQuestion only allows one answer to be submitted
 		if (question.getLimit() == 1) {
 			//if student selects more than one answer, do not count
@@ -29,7 +29,7 @@ public class IVoteService {
 		}
 	}
 	
-	public void displayResults() {
+	protected void displayResults() {
 		//Retrieve number of possible answers for the given question
 		int numberOfAnswers = question.getAllAnswers().size();
 		//Keep tally of each time an answer was selected by a student

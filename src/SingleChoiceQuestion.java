@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class SingleChoiceQuestion extends Question {
+class SingleChoiceQuestion extends Question {
 
-	public SingleChoiceQuestion(String question, ArrayList<String> answers) {
+	protected SingleChoiceQuestion(String question, ArrayList<String> answers) {
 		super(question, answers);
 	}
 
