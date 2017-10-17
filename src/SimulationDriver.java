@@ -20,10 +20,10 @@ public class SimulationDriver {
 
 		// Randomly generate students into ArrayList
 		// Average class sizes range from 25 to 35
-		int randomNum = ThreadLocalRandom.current().nextInt(25, 35 + 1);
+		int randomClassSize = ThreadLocalRandom.current().nextInt(25, 35 + 1);
 		ArrayList<Student> students = new ArrayList<Student>();
 		// Use UUID to create unique IDs for creating students
-		for (int i = 0; i < randomNum; i++) {
+		for (int i = 0; i < randomClassSize; i++) {
 			String uniqueID = UUID.randomUUID().toString();
 			students.add(new Student(uniqueID));
 		}
@@ -50,10 +50,10 @@ public class SimulationDriver {
 
 		// Randomly generate students into ArrayList
 		// Average class sizes range from 25 to 35
-		randomNum = ThreadLocalRandom.current().nextInt(25, 35 + 1);
+		randomClassSize = ThreadLocalRandom.current().nextInt(25, 35 + 1);
 		ArrayList<Student> moreStudents = new ArrayList<Student>();
 		// Use UUID to create unique IDs for these next set of students as well
-		for (int i = 0; i < randomNum; i++) {
+		for (int i = 0; i < randomClassSize; i++) {
 			String uniqueID = UUID.randomUUID().toString();
 			moreStudents.add(new Student(uniqueID));
 		}
